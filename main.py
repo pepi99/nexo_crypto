@@ -14,54 +14,6 @@ if __name__ == '__main__':
     #     'omw-1.4',
     # ])
 
-    # def summ(l):
-    #     """
-    #     Sums elements in list. Created because Python's sum built-in throws an error when summing some objects.
-    #     :param l: list
-    #     :return: summed elements in list
-    #     """
-    #     res = l[0]
-    #     for x in l[1:]:
-    #         res += x
-    #     return res
-
-    # def add_sentiment_title(crypto_list, sentiment_doc, sr):
-    #     """
-    #     This method adds the final sentiments for each coin that we want to analyse, considering title of subreddit.
-    #     :param crypto_list: cryptos that the title talks about
-    #     :param sentiment_dic: the sentiment dictionary
-    #     :return: the sentiment dictionary with updated sentiments
-    #     """
-    #     for crypto in crypto_list:
-    #         if crypto in cryptos_to_analyse:  # Check if crypto is included in what we want to analyse (the list of 3 cryptos)
-    #             sentiment = sr['title_data']['sentiment']
-    #             if crypto in sentiment_doc.keys():
-    #                 sentiment_doc[crypto][sentiment] += 1
-    #             else:  # Then just create the sentiment
-    #                 sentiment_doc[crypto] = {'positive': 0, 'negative': 0, 'neutral': 0}
-    #                 sentiment_doc[crypto][sentiment] += 1
-    #     return sentiment_doc
-
-    # def add_sentiment_comment(comments_cryptos, sentiment_doc, sr):
-    #     """
-    #     This method adds the final sentiments for each coin that we want to analyse, considering comments of subreddit.
-    #     :param comments_cryptos: the list of cryptos for the comments for a subreddits
-    #     :param sentiment_doc: the sentiment dictionary
-    #     :return: the sentiment dictionary with updated sentiments
-    #     """
-    #
-    #     for j, comment_cryptos in enumerate(comments_cryptos):
-    #         for comment_crypto in comment_cryptos:  # There can be multiple cryptos for the same comment
-    #             if comment_crypto in cryptos_to_analyse:  # Then we know that we should analyse it
-    #                 sentiment = sr['comments_data']['sentiments'][
-    #                     j]  # get the sentiment for that specific comment with these crypto types
-    #                 if comment_crypto in sentiment_doc.keys():
-    #                     sentiment_doc[comment_crypto][sentiment] += 1
-    #                 else:
-    #                     sentiment_doc[comment_crypto] = {'positive': 0, 'negative': 0, 'neutral': 0}
-    #                     sentiment_doc[comment_crypto][sentiment] += 1
-    #     return sentiment_doc
-
     cryptos_to_analyse = get_cryptos_to_analyse()
     api_data = get_api_data()
 

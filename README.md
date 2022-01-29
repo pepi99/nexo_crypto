@@ -1,8 +1,22 @@
 # Instructions
-The code can be run either by running python main.py or by executing the cells in main.ipynb.
+The code can be run either by running
+```bash
+python main.py 
+```
+or by executing the cells in main.ipynb after running
+```bash
+jupyter notebook main.ipynb
+```
 
-
+# Install libraries
+```bash
+pip install requirements.txt
+```
 # Setup
+
+The first time you run the program, you should uncomment the nltk package download code in main.py (you will also
+find it in the notebook if you prefer to run it via jupyter), then you can comment it out again.
+
 There are two main configuration files: data/api_data.json and data/cryptos_to_analyse.json.
 The first one contains the set up API account for reddit, it is required in order to access
 their API. The second one contains a json-like representation of the three coins that will be
