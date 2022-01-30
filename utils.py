@@ -10,13 +10,6 @@ import matplotlib.pyplot as plt
 import re
 
 
-# Sources
-# https://towardsdatascience.com/a-beginners-guide-to-sentiment-analysis-in-python-95e354ea84f6
-# https://levelup.gitconnected.com/reddit-sentiment-analysis-with-python-c13062b862f6
-# https://realpython.com/python-nltk-sentiment-analysis/
-# https://www.datacamp.com/community/tutorials/text-analytics-beginners-nltk
-# https://dariuslfuller.medium.com/creating-visuals-with-nltks-freqdist-ac4e667e49f3
-
 # Check this: https://medium.com/@b.terryjack/nlp-pre-trained-sentiment-analysis-1eb52a9d742c
 # Using NLTK's Vader pre-trained sentiment analyser allows us to run it on unlabelled data (as is ours)
 # It uses some heuristics and words like "really, very" to increase the sentiment scores.
