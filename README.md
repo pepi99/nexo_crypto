@@ -9,6 +9,7 @@ jupyter notebook main.ipynb
 ```
 
 # Install libraries
+First, create a virtual environment 'venv'. Then install the libraries by running:
 ```bash
 pip install requirements.txt
 ```

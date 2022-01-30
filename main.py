@@ -1,3 +1,5 @@
+__author__ = "Petar Ulev"
+
 import praw
 from utils import get_api_data, nltk_sentiment, get_crypto_from_text, preprocess, analyse_subreddit, plot_pie_chart, \
     get_cryptos_to_analyse, summ, add_sentiment_title, add_sentiment_comment
@@ -23,7 +25,7 @@ if __name__ == '__main__':
                              password=api_data['password'],
                              username=api_data['username'])
 
-    LIMIT = 30  # This indicates how many subreddits to fetch
+    LIMIT = 400  # This indicates how many subreddits to fetch
 
     top_posts = reddit_api.subreddit('CryptoCurrency').top('day',
                                                            limit=LIMIT)  # Fetch the top daily posts (using LIMIT as indicator of how many of them, if all needed - just set it to float(inf)

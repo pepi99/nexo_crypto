@@ -1,3 +1,5 @@
+__author__ = "Petar Ulev"
+
 import nltk
 import json
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
